@@ -1,0 +1,22 @@
+commit message best practices
+
+    - short single line summary, less 50 char.
+    - for longer description, follow initial description with
+    a "blank" line, followed by a more complete description.
+    - keep each line less than 72 char.
+    - write in present tense "fix for a bug" or "fixes a bug"
+    - bullet points are usually asterisks or hyphens
+    - can add "tracking numbers" or support requests
+    - can develop shorthand for your Org. "[css,js]", "bugfix:", "#66601"
+    - be clear and descriptive
+      - Bad: "fix typo"
+      - Good: "Add missing hyphen in project section of HTML"
+      - Bad: "Update login code"
+      - Good "Change user authentication to use Blowfish"
+    - don't add unnecessary information
+
+    E.G.
+
+      ghi2334 - Fixes bug in admin logout
+
+      When an admin logged out of the admin area, 
