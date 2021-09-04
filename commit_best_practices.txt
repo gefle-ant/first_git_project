@@ -19,4 +19,8 @@ commit message best practices
 
       ghi2334 - Fixes bug in admin logout
 
-      When an admin logged out of the admin area, 
+      When an admin logged out of the admin area, they
+      could not login to the members area because their
+      session[:user_id] was still set to the admin ID.
+      This patch fixes the bug by setting session[:user_id]
+      to nil when any user logs out of any area.
