@@ -1,0 +1,15 @@
+view commit logs
+
+  cmnds:
+    - git log - shows all commits
+    - git log -2 - shows the last 2 commits
+    - git log --since=00-00-00 - shows all commits SINCE the date inputted
+    - git log --unitl=00-00-00 - shows all commits UNTIL the date inputted
+    - git log --author=kevin - shows all commits made by this author, searches for the "string" ("kevin") as author. full or partial name is acceptable
+    - git log --grep="Init" - globally searches for regular expressions for the string provided. Return any commit that has this string in it.
+      e.g. git log --grep="Bugfix" searches all commits for bug fixes. Helpful
+
+
+    From Quiz
+    - git init - intializes the directory with a .git directory containing project-specific files.
+    - 
