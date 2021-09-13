@@ -2,7 +2,7 @@ Git instructions (commit)
   1. bash cmd: git add . (the "." is shorthand for the 'current directory')
       - this adds all changes that are in the current directory.
       - these changes are not yet current, git hasn't actually added them yet.
-  2. bash cmd: git commit -m "Initial commit" (the "-m" is short for 'message')
+  2. bash cmd: git commit -m="Initial commit" (the "-m" is short for 'message')
       - takes all the things that we've added and tells git to actually commit
       them and track them forever.
   3. read / examine the commit.
