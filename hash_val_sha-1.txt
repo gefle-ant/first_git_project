@@ -1,0 +1,12 @@
+Hash Values (SHA-1) (unique ID# git assigns to files and their versions)
+  -Git generates a checksum for each change set
+  -Checksum algorithms convert data into a simple number
+  -Same data always equals same Checksum
+  -Data integrity is fundamental
+  -Changing data would change the Checksum
+  -Git uses SHA-q hash algorithm to create checksum.
+    -important to know this term "Sha" value, because people refer to this when they are referring to the checksum value.
+  -40 character hexadecimal string (0-9, a-f)
+  -Example: 5c15e8bd540c113cd2d9eac6f64cacbc5ff6fe9c
+  -git commit compares SHA-1 value and the metadata to the change
+  -chain of data integrity, everything is linked to the history and relation to one another.

@@ -1,0 +1,76 @@
+Git Workflow
+  - Three Trees: w/ file.txt (v.1, A)
+
+    1st Step (v.1, A)
+      -Repository
+      -Staging Index
+      -Working
+        -set of changes to: file.txt (v.1) (A)
+        -git add file.txt
+        -NOTE: cmd:"git add file.txt" specifies adding a single file to the dir, rather that "." which add everything in the dir.
+
+    2nd Step (v.1, A)
+      -Repository
+      -Staging Index
+        -set of changes to: file.txt (v.1) (A)
+        -added to Staging Index via git add file.txt (single file added)
+      -Working
+
+    3rd Step (v.1 A)
+      -Repository
+        -set of changes to: file.txt (v.1) (A)
+        -added w/ cmd: "git commit"
+      -Staging Index
+      -Working
+
+    Next.. (v.2, B)
+
+    1st Step (v.2, B)
+      -Repository
+      -Staging Index
+      -Working
+        -new set of changes to: file.txt (v.2) or (B)
+        -git add file.txt
+        -NOTE: cmd:"git add file.txt" specifies adding a single file to the dir, rather that "." which add everything in the dir.
+
+    2nd Step (v.2, B)
+      -Repository
+      -Staging Index
+        -new set of changes to: file.txt (v.2) (B)
+        -added to Staging Index via git add file.txt (single file added)
+      -Working
+
+    3rd Step (v.2 B)
+      -Repository
+        -new set of changes to: file.txt (v.2) (B)
+        -added w/ cmd: "git commit"
+      -Staging Index
+      -Working
+
+      Next.. (v.3, C)
+
+      1st Step (v.3, C)
+        -Repository
+        -Staging Index
+        -Working
+          -new set of changes to: file.txt (v.3) or (C)
+          -git add file.txt
+          -NOTE: cmd:"git add file.txt" specifies adding a single file to the dir, rather that "." which add everything in the dir.
+
+      2nd Step (v.3, C)
+        -Repository
+        -Staging Index
+          -new set of changes to: file.txt (v.3) (C)
+          -added to Staging Index via git add file.txt (single file added)
+        -Working
+
+      3rd Step (v.3, C)
+        -Repository
+          -new set of changes to: file.txt (v.3) (C)
+          -added w/ cmd: "git commit"
+        -Staging Index
+        -Working
+
+    Finally..
+    -use cmd: "git log", to see what changed between each of the versions.
+    -git assigns a unique ID# that applies to each change, not 'A', 'B', 'C' (snapshot or checksum)

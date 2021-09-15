@@ -1,0 +1,20 @@
+The Three Tree Arch:
+
+ Typical 2 Tree Arch:
+    -Repository and Working
+    -Checkout copy from Repository
+    -Make changes and return/commit changes to the Repository.
+    -If you have not checked out a copy recently and other developers have made changes to the file than the working file would not have these changes. Your working on old versions.
+
+  Git, Three Tree Arch:
+    -Still has the Repository and the Working copy, but in between is another tree know as the "Staging Index"
+    -when we commit/BASH we are first adding our git add file.txt to the Staging Index, the comitting the file git commit file.txt to the Repository
+    - It is possible to skip the Staging Index, though this is part of the git Arch.
+    -Possible to pull "check them out" of the Repository in the same order, via the Staging Index. Usually not what we will do.
+    -Three Trees:
+      - Repository
+        -What is being tracked by Git, the changes that it has and will keep track of.
+      -Staging Index
+        -Contains changes that we are about to commit to Repository
+      -Working
+        -Contains changes that may not be tracked by git yet.

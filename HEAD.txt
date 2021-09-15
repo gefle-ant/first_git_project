@@ -1,0 +1,21 @@
+HEAD:
+
+  - Pointer of the tip of current branch in repository. Last state of repository, what was last checked out.
+
+  - References or points to parent of the next commit where writing commits takes place.
+
+  - References current position in the repository.
+
+  - e.g. [5c15e8]-[38e73d]-this is where the current head is pointed..
+
+         [5c15e8]-[38e73d]-[a614b5]-now this is the current head.(master branch)
+
+       NOTE: the branch you are working on is called the master branch.
+
+         [84c46a]- this is a new branch (the head has moved to this branch)
+
+         [84c46a]-[cce979]-[f36de]- the head is now pointed here.
+
+    -cmd: cat .get/HEAD - can find the information related to the HEAD master reference, in the refs/heads/master
+
+    -cmd: cat .git/refs/heads/master (produces a SHA-1 value)
