@@ -74,3 +74,6 @@ Git Workflow
     Finally..
     -use cmd: "git log", to see what changed between each of the versions.
     -git assigns a unique ID# that applies to each change, not 'A', 'B', 'C' (snapshot or checksum)
+
+
+    This is being added to help understand how git handles edited files.

@@ -19,3 +19,5 @@ HEAD:
     -cmd: cat .get/HEAD - can find the information related to the HEAD master reference, in the refs/heads/master
 
     -cmd: cat .git/refs/heads/master (produces a SHA-1 value)
+
+    This is being added to help understand how git handles edited files.
