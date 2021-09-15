@@ -2,4 +2,4 @@ Edit Files: How git handles files that have been edited.
 
   - cmd "git add git_edited_files_handling.txt" - this file, was sent to the Staging Area "tree".
 
-  -
+  - the process of adding files is the basically the same as adding edits to files. 
