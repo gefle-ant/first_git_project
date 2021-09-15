@@ -1,5 +1,13 @@
 Add files to the .git repository
 
-  - cmd: git status - shows what if anything has not been committed, and or that "the working tree is clean" nothing to commit, etc. + what branch your on.
+  - cmd: "git status" - shows what if anything has not been committed, and or that "the working tree is clean" nothing to commit, etc. + what branch your on.
 
-  -
+  - cmd: "git add ." - adds all changes that are in the working dir to the Staging Area
+
+  - cmd: "git add add_files.txt - stages this particular file "add_files.txt" to the Staging Area.
+
+  - cmd: "git restore --staged add_files.txt" - un-stages file that was sent to the Staging Area.
+
+  - cmd: "git commit -m="add add_files.txt to the repository" - commits this file to the repository.
+    * produces a message with a shortened version of the SHA-1 value, amongst other pertinent info in regards to the commit.
+  
