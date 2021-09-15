@@ -1,0 +1,5 @@
+Add files to the .git repository
+
+  - cmd: git status - shows what if anything has not been committed, and or that "the working tree is clean" nothing to commit, etc. + what branch your on.
+
+  -
