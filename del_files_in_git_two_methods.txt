@@ -1,0 +1,14 @@
+Delete files. - tracking files with git when they are deleted.
+
+  - There are 2 different techniques to delete files with git (mentioned in the course "Git Essential Training: The Basics")
+
+    1. just delete the file yourself. Drag file to the trash or to another dir (e.g. desktop).
+      - cmd: "git rm <file>" - this will remove the file and put it back in the staging area for deletion.
+      - next, commit the change by using the commit cmd: "git commit -m="file deletion <file>"
+        -NOTE afer typing "git rm", typing the beginning of the fiel name that you are intending to delete, e.g. "file_" and then hitting the "tab key", autocompletes the file name or name of files that are similiar, giving you the option to input the remainder of the correct file.
+
+    2. we can tell git to remove the file in BASH.
+      - cmd: "git rm <file>" file is removed using a unix remove cmd. permanently removed.
+      - still exists in the repository.
+      - added to Staging Directory.
+      - commit change cmd: "git commit -m="<file>"
