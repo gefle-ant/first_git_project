@@ -1,0 +1,16 @@
+View changes with diff.
+
+  - cmd: "git diff" compares changes to a file and displays them in BASH, including add's and subt's to the file, what specificallz was changes (txt), removed added or changed.
+    - will display only the changes and where they are in the file.
+    - also displays each file that has uncommited changes.
+    - zooms in on the change.
+
+View only the Staged Changes using cmd: "git diff"
+
+  - cmd: "git diff" - by default, compares the working directory against the staging Tree/Area.
+
+  - cmd: "git diff --staged" - used if you want to see only changes made to files in the staging area.
+
+  - "staged" is an alias for "cached"
+    - cmd: "git diff --cahced" does the exact same thing as "git diff --staged"
+    - before git ver 1.7, cahced was the only cmd available to compare these changes. staged was added as an alias (more intuitive and convenient)
