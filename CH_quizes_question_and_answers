@@ -1,0 +1,77 @@
+Chapter Quiz: Questions and Answers
+CH_1
+CH_2
+CH_3
+CH_4
+
+CH_5
+
+  1. What is the difference between
+    cmd: "git diff" and cmd: "git diff --staged"?
+
+    Ans: cmd: "git diff", compares the changes to tworking directory files to the staging index, while cmd: "git diff --staged" compares staged files to the repository versions.
+
+    Note: Adding the "--staged" option to the "git diff" command changes which tree's files are analyzed in the diff.
+
+  2. Which of these methods is the best to with a file called <this_file.txt> that should NOT be deleted but should no longer be referenced when cmd: "git status" is used?
+
+    Ans: Move <this_file.txt> from the project directory and use cmd: "git rm <this_file.txt> to remove the file."
+
+    Note: Though it is possible to instruct Git to ignore a file in the working directory, moving a file from the directory will result in a prompt from cmd: "git status" to remove the file with cmd: "git rm", and executing this instruction means the file will no longer be tracked or noticed by Git.
+
+  3. How is staging an edited file different from staging a new file?
+
+    Ans: Both require cmd: "git add" to stage them.
+
+    Note: cmd: "git add" will stage any file, regardless of the kind of change it has created in the repository.
+
+  4. If the output of cmd: "git status" reveals that file <file1.php> is untracked, what is true about the file?
+
+    Ans: There will be no record of further changes made on <file1.php>
+
+  5. If a user must use cmd: "git reset HEAD tabs.js" to unstage <tabs.js>, which command likely created the need to reset the HEAD?
+
+    Ans: cmd: "git add ."
+
+    Note: if the <tabs.js> file must be unstaged, it was staged with either cmd: "git add ." or cmd: "git add <tabs.js>" .. This might become necessary in situations where the user does not wish to add a file to the repository or even does not want the current changes in that file to be a part of the next commit.
+
+  6. The output of cmd: "git status" is the following text, the last line. Changes to be committed:
+
+        (use cmd: "git reset HEAD <file>..." to unstage)
+
+        deleted: file1.php
+
+    Which action did NOT create this result?
+
+      Ans: <file1.php> was deleted with an operating system tool rather that cmd: "git rm <file1.php>"
+
+      Note: Green text denoting a file deletion means this deletion has already been staged for the next commit. If a file is deleted without using cmd: "git rm <file>", the deletion notice from cmd: "git status" will be red.
+
+  7. How does committing an edited file affect the Git architecture's trees?
+
+    Ans: The commit moves the file from the staging area to the repository.
+
+    Note: Just like adding a new file to the repository, committing the file moves it from the staging index to the repository.
+
+  8. What is the most efficient way to rename a file in the repository?
+
+    Ans: Use cmd: "git mv" with the file name.
+
+    Note: cmd: "git mv" is the most efficient way to both move a file to a new location and rename the file.
+      - e.g. cmd: "git mv <second_file.txt secondary_file.txt>"
+        - the new file name comes after the origional file name.
+
+  9. In which situation would you use cmd: "git diff"?
+
+      Ans: To observe specific changes from the original version of the <file>.
+
+      Note: cmd: "git diff" displays only the lines that have changed between the two versions of the file.
+
+  10. What does the snippet of cmd: "git diff" output below signify? Assume these output lines are contiguous.
+
+      - background: #78b210 url("bg.png");
+      + background-color: #d0f0f6
+
+      Ans: The edit changed the line by replacing the first line with the second.
+
+      Note: A line starting with a minus "-" sign immediately followed by a line starting with a plus "+" sign signifies a single line in the file has changed.
