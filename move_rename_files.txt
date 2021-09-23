@@ -1,0 +1,23 @@
+Linked In Learning: Git
+
+Move and Rename Files
+
+1st Example: UI
+  - in this example, we are changing a file name in the folder itself via the UI, in Windows. if you change a file in the UI or folder, the even is recorded as two separate events. 1. File deletion (cmd: "git status") and 2. Untracked file
+
+  - next, cmd: "add <file>" and cmd: "git rm <old_file>"
+  - git shows "renamed: <old_file> -> <file>"
+  - git realizes that more than 50% of this file is similar and that "oh!" the file name is what changed. as soon as we put file into staging
+
+-NOTE: moving a file a renaming a file are the same thing, same file different path
+
+2nd Example: cmd line
+  - "move" as the way to rename.
+    - cmd: "git mv <second_file.txt secondary_file.txt>"
+  - file has been "moved" and is now renamed to secondary_file in the operating sys.
+  - more efficient to do this with a single cmd.
+
+Next Example: Create folder "first_folder" and move and existing file "third_file.txt" into it with the UI/Operating sys.
+  - again git shows 1. deleted: third_file.txt and 2. Untracked first_folder
+  - now, we remove the file from the folder and replace it in the main directory it was previously in.
+  -next, we will try to move it with cmd: "git mv third_file.txt first_folder/third_file.txt"
