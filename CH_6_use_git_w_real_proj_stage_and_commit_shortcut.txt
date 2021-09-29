@@ -1,0 +1,17 @@
+Git Essentials: CH_6 Use Git with a Real Project.
+
+CH 6: The Explore California Website
+
+  - Stage and Commit - Shortcut
+
+    - Normal process for staging and committing changes to a repo is to:
+      1. cmd "git add <file>" to Staging Index
+      2. cmd: "git commit <file>" to the Repository
+
+    - If you already know that you are ready to commit everything to the Repository and skip the Staging step, use:
+      - cmd: "git commit -a <file>", same as cmd: "git commit --all" which commits all the files.
+        - two important caveats:
+          1. Stages and Commits all the changes to the tracked files. Everything!
+          2. Does not include untracked files.
+
+        - used cmd: "git commit -am "message"", to commit all files and deliver a commit message.

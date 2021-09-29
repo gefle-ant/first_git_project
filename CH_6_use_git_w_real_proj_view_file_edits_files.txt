@@ -1,0 +1,17 @@
+Git Essentials: CH_6 Use Git with a Real Project.
+
+CH 6: The Explore California Website
+
+  - View File Edits: (real world edits, look like)
+
+    - change 4 digits of a phone number in the explore_california project folder's HTML
+      - in Atom, used Find > Find in project > and searched globally for the last 4 digits "4315" to be changed to 4314.
+      - selected all of the instances of "4315" and changed all.
+      - File > Save All, makes the changes officially changes in the folder.
+
+    - Used BASH cmd: "git diff" to view all of the changes in a paginator.
+      - <spacebar> will move forward through the pages as well as "f, forward" or "b, backward" are used to navigate the pages.
+      - lines wrapping, cmd type "-S" (capital S) toggles between chopping and wrapping the lines.
+      - "q" exits the paginator
+
+    - additional "git diff" options cmd: "git diff --color-words" shows only the words that are different, instead of +- for the entire line. Helpful for long paragraphs.

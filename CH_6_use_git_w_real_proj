@@ -1,1 +1,14 @@
-Git Essentials: CH_6 Use Git with a Real Project. 
+Git Essentials: CH_6 Use Git with a Real Project.
+
+CH 6: The Explore California Website
+
+  NOTE: Chapters 1 - 5 represent the core of what we will be doing with git.
+
+  NOTE: using cmd: "git log" will provide an output of logs, to exit type "q"
+
+  - Added explore_california folder to the Documents dir
+  - ran cdm: "git init" to initialize the repository and typed cmd: "ls -la" to confirm that the .git files had been added to the folder, git is tracking.
+
+  - NOTE: was having an error "no such file..index.lock" which was caused by Windows Ransomware Protection. This needed to be shut off or alternatively, and exception for git.exe would need to be made. I turned the ransomware feature off entirely.
+
+  - the explore_california folder is a separate git repo from the first_git_project folder. one can have as many git repos on ones computer as is necessary. The changes are tracked separately.
