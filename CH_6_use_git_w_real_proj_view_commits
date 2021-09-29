@@ -1,0 +1,19 @@
+Git Essentials: CH_6 Use Git with a Real Project.
+
+CH 6: The Explore California Website
+
+  - View Commit: Review previous commits
+
+    - Edit explore_california: index.html
+      - you'll to you will
+
+    - cmd: "git diff --color-words" which zeros in on the exact change and leaves out the rest of the text not changed.
+
+    - What if you want to review a previous commit?
+
+      - cmd: "git show and the <SHA val, first 7 digits>"
+        - e.g. cmd: "git show 1c16945"
+        - this enough information for git to identify the specific commit 6 - 8 char. for the size of the example project/commits.
+        - and or cmd: "git show 1c16945 --color-words" - just changes
+
+      
