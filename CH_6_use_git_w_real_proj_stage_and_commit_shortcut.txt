@@ -2,7 +2,7 @@ Git Essentials: CH_6 Use Git with a Real Project.
 
 CH 6: The Explore California Website
 
-  - Stage and Commit - Shortcutcd
+  - Stage and Commit - Shortcut
 
     - Normal process for staging and committing changes to a repo is to:
       1. cmd "git add <file>" to Staging Index

@@ -2,4 +2,17 @@ Git Essentials: CH_6 Use Git with a Real Project.
 
 CH 6: The Explore California Website
 
-  - View Commit: Compare commits
+  - Compare commits:
+
+
+  - Make Change to the Resources > FAQ page
+    - Learn more about our tours.
+
+    - chng: In this section you'll to "you will"
+    - save changes
+
+  -CMD Line
+    - cmd: "git diff --color-words" sows the change made.
+    - cmd: "git commit -m"Remove contraction in text""
+    - to compare commits use cmd: "git diff d5c738e..1dab76d3 --color-words", this will display the difference between two diffent commits
+    - to compare a commit to the latest commit use cmd: "git diff d5c738e..HEAD --color-words", HEAD refers to the latest commit.
