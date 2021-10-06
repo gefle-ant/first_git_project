@@ -1,0 +1,30 @@
+Git Essentials: CH_6 Use Git with a Real Project.
+
+CH 6: The Explore California Website
+
+  - Atomic Commits:
+
+    - essentially just a small commit
+    - Only affect a single aspect
+    - Easier to understand, to work with, and to find bugs
+    - well labled sets of commits
+    - improves collabortaion
+    - allows you to offer commits that relate to say.. a certain feature, becasue there are small well organized sets of commits.
+
+    - e.g Client on Explore California Site, wants some changes to the Tours Page and the Contact Page.
+
+      - inside git BASH: cmd "git mv tours/tour_detail_backpack.html tour_detail_backpack_cal.html"
+
+      - This renames the file and a cmd: "git status" check confirms this change.
+
+      - inside "Atom" txt editor, we need to check the website to make sure that any corresponding links that end with "backpack.html" are updated to the new file name ending of "backpack_cal.html"
+
+        - Find > Find In Project or "Ctrl Shift F" brigns us to the interface where "Search All" is located and after entering "backpack.html", 3 instances are located, "Change All" is invoked and File > Save all completes the process of pointing to the correct link.
+
+      - returning to BASH "command line", we see that all of the recent changes are available to commit. If we commit with cmd: "git commit -a" option, everything that is in red would commit.
+
+      -we want to seperate the commits, they are not all related. and they come packaged all together.
+
+      - atomic commits are to commit all the changes to the tour page as one commit and the changes to the contact page as another. this again allows someone to choose to commit a related change and not a group of potentially unrelated commits.
+
+     Note: a best practie!
