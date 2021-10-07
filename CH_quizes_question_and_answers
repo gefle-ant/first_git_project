@@ -75,3 +75,115 @@ CH_5
       Ans: The edit changed the line by replacing the first line with the second.
 
       Note: A line starting with a minus "-" sign immediately followed by a line starting with a plus "+" sign signifies a single line in the file has changed.
+
+  CH_6
+
+    1. What would be considered an "atomic commit"
+
+      Ans: Adding a single link that would update on all pages globally across site.
+
+      Note: basically, this is a single change with a narrow scope.
+
+    2. Which it the correct order of the following actions to commit a single change to the repository?
+      a 'git commit'
+      b 'git diff'
+      c edit the file
+      d add a multi-line commit mess
+      e 'git add'
+
+      Ans: c, b, e, a, d
+
+      Note: Steps e and a can be combined with git commit -a, but the proper order is edit, diff, stage, commit, add message.
+
+    3. If an empty directory requires cmd: "git init" to initialize a repository, what command is required for a non-empty directory?
+
+      Ans: cmd: "git init"
+
+      Note: git initializes any directory to create a repository by creating the '.git' directory in the current location, considered the top level of the repository.
+
+    4. Assuming all the files have been edited, which series of commands will result in four seperate commits?
+
+      Ans: git add file1
+           git commit
+           git add file2 file3
+           git commit
+           git add file4 file6
+           git commit
+           git commit -a
+
+      Note: The first three commits include specific files in each order to stage those files seperately. The final commit will include any edited files that have not already been commited.
+
+    5. If viewing a diff of an edited file displays a single unchopped line, and edits are highlighted by word instead of by line, which commands were used?
+
+      Ans: on the command line: cmd: "git diff --color-words" In the diff paginator: "-S"
+
+      Note:Invoking diff with '--color-words' will highlight changes by word rather than by line. Using '-S' will toggle line wrapping. Word-wise changes can also be formatted with '--word-diff'.
+
+    6. By using cmd: "git commit -am", which commandhas been made redundant.
+
+      Ans: cmd: "git add"
+
+      Note: Using the '-a' option with cmd: "git commit" skips the staging tree and directly commits all changes, so files do not need to be staged with git add.
+
+    7. Which command should precede cmd: "git commit -a" to ensure no unwanted changes will be committed?
+
+      Ans: cmd: "git status"
+
+      Note: cmd: "git diff" and "git commit --dry-run" can also be used to ensure no unwanted changes will be committed"
+
+      Also: If a commit was maken by mistake, cmd: "git reset" can be used. https://git-scm.com/docs/git-reset -Documentation
+
+    8. Which command indentifies the hash you can use in cmd: "git show"?
+
+      Ans: cmd: "git log"
+
+      Note: Git's log will list the hash for each commit, allowing users to quickly identify the SHA for the commit the wish to view.
+
+    9. Which command would allow a user to view the changes of a past commit with the SHA that begins <SHA>? The command should highlight word changes rather than line changes.
+
+      Ans: cmd: "git show --color-words <SHA>"
+
+      Note: To view a commits diff, the git 'show' command is needed. Like cmd: "git diff", it takes '--color-words' option.
+
+    10. Why is using a sandbox repository helpful?
+
+      Ans: A sandbox offers a space for trying out changes that might cause errors that are difficult to recover from.
+
+      Note: The purpose of a sandbox is to serve as a space for trial and error, to learn about a behavior or to see if a series of commands will result in the needed or expected outcome.
+
+    11. Assume a client wants four changes to their website:
+
+      1. Change the price of the blue widget on one page, as well as the description of the widget
+      2. Change the price of the green widget on a separate page
+      3. Edit the About Us page to remove a paragraph
+      4. Add a photo to the home page
+
+      What is a reasonable number of atomic commits you should make?
+
+      Ans: 5 (#1. is 2 Commits)
+
+      Note: One commit for each task is reasonable. Four might be reasonable, but if the first task -- changing the price and description for the blue widget -- were in a single commit and the price change needed to be rolled back, the description change would also end up rolled back.
+
+    12. What is the most likely cause if cmd: "git status" results in the output "Not a Git Repository"?
+
+      Ans: There is no .git directory in the current directory or in the parent directories.
+
+      Note: Git will check parent directories to confirm the user is not in a subdirectory of a repository.
+
+    13. Which will return the diff of the next commit's parent with the commit identified by SHA a8b0cd? Assume the older commit's parent SHA is 682bcd.
+
+      Ans: cmd: "git diff 682bcd..HEAD"
+
+      Note: Two equivalent alternatives are cmd: "git diff 682bcd.." and cmd: "git diff a8b0cd^..HEAD". Git will use HEAD if a commit is not specified on one side of the '..', and the caret (^) refers to the SHA's parent commit.
+
+    14. What is the result of the following command: "git commit -a"?
+
+      Ans: Git will open a text editor for a commit message and commit all files with changes.
+
+      Note: The 'core.editor' config value will determine which text editor is opened to accept a commit message.
+
+    15. What commit message will appear in cmd: "git log --oneline" for a commit if no commit message was provided.
+
+      Ans: The commit will not appear in the log.
+
+      Note: When Git is not provided a commit message, it will abort the commit. Using the '-m' option with empty quotes has the same result as exiting a text editor without providing a message.
