@@ -1,0 +1,13 @@
+Git Essentials: CH_6 Use Git with a Real Project.
+
+CH 6: The Explore California Website
+
+  - Challenge: Client Edits
+
+    - Client has sent an email.
+      -Change the following
+        1. Change the price of the Big Sur Retreat from $620 to $750
+        2. Change the price of the California Calm from $250 to $270
+        3. Change the title fo Explores page to "Make new friends"
+
+        - Changes made in 2 commits, 1. Global Price Changes and 2. Explorer page title change. 
