@@ -1,0 +1,44 @@
+Git Essentials: CH_7 Undo changes.
+
+CH 7: Unstage files.
+
+  - Several changes have been made across a project folder (a price change in this case)
+  - checking "git stauts" shows the changes in the specific files.
+  - fof the sake of the exercise, I will add 'some' of the changes to the staging area. cmd: "git add <file>*" using the asterisk '*' is a 'wildcard' char. and this will add any file with the typed file name "tours" in this case: cmd: "git add tours*" which adds in this case 2 dir's
+
+  - agian, when the the 'add' is made, the user is prompted to use a command "git restore --staged <file..>" to unstage. or "git reset HEAD <file..>" is another version of this process. (see below for further explanation)
+
+  - If I need to restore all the chages made in error or to revert in this case to a previous pricing scheme, we can again use cmd: "git checkout -- ." to restore all the files/dir's to their pervious versions. The period '.' at the end of the cmd sequence, takes the checkout resstore to all the file in the staging dir. 
+
+  "git restore --staged hello.c
+  or you can restore both the index and the working tree (this the same as using git-checkout)"
+
+  and
+
+  "git-reset is about updating your branch, moving the tip in order to add or remove commits from the branch. This operation changes the commit history.
+  git reset can also be used to restore the index, overlapping with git restore."
+
+
+
+  Further Notes: from 'StackOverflow'
+  As reset, restore and revert documentation states:
+
+There are three commands with similar names: git reset, git restore and git revert.
+
+git-revert is about making a new commit that reverts the changes made by other commits.
+git-restore is about restoring files in the working tree from either the index or another commit.
+This command does not update your branch.
+The command can also be used to restore files in the index from another commit.
+git-reset is about updating your branch, moving the tip in order to add or remove commits from the branch. This operation changes the commit history.
+git reset can also be used to restore the index, overlapping with git restore.
+So:
+
+To restore a file in the index to match the version in HEAD (this is the same as using git-reset)
+
+git restore --staged hello.c
+or you can restore both the index and the working tree (this the same as using git-checkout)
+
+git restore --source=HEAD --staged --worktree hello.c
+or the short form which is more practical but less readable:
+
+git restore -s@ -SW hello.c

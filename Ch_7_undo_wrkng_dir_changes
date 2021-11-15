@@ -1,0 +1,10 @@
+Git Essentials: CH_7 Undo changes.
+
+CH 7: Undo working directory changes.
+
+  - A change to a file has been made in error and cannot be undone (saved).
+
+    - Use git to restore the changes, when "git status" is checked, the user is prompted to use cmd: "git checkout -- <file>..." to discard the changes in the working dir.
+    - the bare double dash " -- " in cmd: "git checkout -- <file>..." is used to checkout a file in the 'current branch'.
+    - powerful, will remove any changes that are there.
+    - cmd: "git checout" is a flexible comand, especially helpful when working with branches.
